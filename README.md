@@ -87,7 +87,7 @@ access to protected resources.
 **Login → Authentication → Token Generation → Request Authentication → Protected Resources**
 
 <p align="center">
-  <img src="docs/authentication-flow.png" width="75%" alt="Authentication Flow">
+  <img src="docs/authentication-flow.png" width="68%" alt="Authentication Flow">
 </p>
 
 ---
