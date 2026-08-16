@@ -222,37 +222,6 @@ managed cloud services and containerized application deployments.
 | Image Storage       | Cloudinary         | Profile and uploaded image storage |
 | Containerization    | Docker             | Application containerization       |
 
-### Deployment Architecture
-
-```text
-                         Users
-                           │
-                           ▼
-                    ┌─────────────┐
-                    │   Netlify   │
-                    │ React App   │
-                    └──────┬──────┘
-                           │
-                           ▼
-                    ┌─────────────┐
-                    │   Render    │
-                    │ Spring Boot │
-                    └──────┬──────┘
-                           │
-             ┌─────────────┼─────────────┬─────────────┐
-             │             │             │             │
-             ▼             ▼             ▼             ▼
-        ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌──────────┐
-        │  Neon   │   │ Upstash │   │  Aiven  │   │Cloudinary│
-        │Postgres │   │  Redis  │   │  Kafka  │   │  Images  │
-        └─────────┘   └─────────┘   └────┬────┘   └──────────┘
-                                         │
-                                         ▼
-                                  ┌─────────────┐
-                                  │   Render    │
-                                  │ Go Service  │
-                                  └─────────────┘
-```
 
 ### Services Used
 
@@ -384,13 +353,6 @@ Potential areas for further improvement include:
 
 Thanks for taking the time to explore **CodeCache.**
 
-<br/>
-
-**CodeCache — Build · Solve · Share · Connect**
-
-<br/>
-
-### CodeCache
 
 [**https://adorable-basbousa-4829bb.netlify.app/**](https://adorable-basbousa-4829bb.netlify.app/)
 
