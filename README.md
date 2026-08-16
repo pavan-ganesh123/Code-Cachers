@@ -8,20 +8,20 @@
 
 <br/>
 
-[![Java](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Java](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge\&logo=springboot\&logoColor=white)](https://spring.io/projects/spring-boot)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)](https://react.dev/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)](https://www.docker.com/)
 
 <br/>
 
 [**Live Demo**](https://adorable-basbousa-4829bb.netlify.app/)
-&nbsp;&nbsp;•&nbsp;&nbsp;
+  •  
 [**Backend**](https://github.com/pavan-ganesh123/CodeCache)
-&nbsp;&nbsp;•&nbsp;&nbsp;
+  •  
 [**Frontend**](https://github.com/pavan-ganesh123/CodingFront)
-&nbsp;&nbsp;•&nbsp;&nbsp;
+  •  
 [**Go Service**](https://github.com/pavan-ganesh123/ChatLoop)
 
 </div>
@@ -45,20 +45,19 @@ Python, PostgreSQL, Redis, Kafka, and external services.
 
 ## What Can You Do With CodeCache?
 
-| Area | Features |
-|---|---|
-| **Authentication** | Login, authentication, authorization, protected resources |
-| **Problems** | Coding problems, platforms, difficulty, intuition & complexity |
-| **Topics** | Organize problems using topics |
-| **Posts** | Share coding problems and solutions |
-| **Interactions** | Likes, comments and post sharing |
-| **Social** | Friend requests, relationships, blocking |
-| **Feed** | Personalized feed with visibility rules and pagination |
-| **Chat** | Friend-to-friend conversations and persistent messages |
-| **Notifications** | Event-driven notifications using Kafka |
-| **Media** | Profile and post image uploads |
-| **AI** | Gemini-powered problem information |
-| **Profile** | Coding activity, streaks and statistics |
+| Area               | Features                                                       |
+| ------------------ | -------------------------------------------------------------- |
+| **Authentication** | Login, authentication, authorization, protected resources      |
+| **Problems**       | Coding problems, platforms, difficulty, intuition & complexity |
+| **Topics**         | Organize problems using topics                                 |
+| **Posts**          | Share coding problems and solutions                            |
+| **Interactions**   | Likes, comments and post sharing                               |
+| **Social**         | Friend requests, relationships, blocking                       |
+| **Feed**           | Personalized feed with visibility rules and pagination         |
+| **Chat**           | Friend-to-friend conversations and persistent messages         |
+| **Notifications**  | Event-driven notifications using Kafka                         |
+| **Media**          | Profile and post image uploads                                 |
+| **Profile**        | Coding activity, streaks and statistics                        |
 
 ---
 
@@ -72,7 +71,7 @@ fast-access data, Kafka for asynchronous event communication, and
 additional Go and Python services for specialized functionality.
 
 <p align="center">
-  <img src="docs/architecture.png" width="90%">
+  <img src="docs/architecture.png" width="90%" alt="CodeCache System Architecture">
 </p>
 
 ---
@@ -88,7 +87,7 @@ access to protected resources.
 **Login → Authentication → Token Generation → Request Authentication → Protected Resources**
 
 <p align="center">
-  <img src="docs/authentication-flow.png" width="80%">
+  <img src="docs/authentication-flow.png" width="75%" alt="Authentication Flow">
 </p>
 
 ---
@@ -103,7 +102,7 @@ Kafka and consumed asynchronously for notification processing.
 **Application Event → Kafka Producer → Kafka Topic → Consumer → Notification Processing**
 
 <p align="center">
-  <img src="docs/kafka-flow.png" width="85%">
+  <img src="docs/kafka-flow.png" width="85%" alt="Kafka Notification Flow">
 </p>
 
 > Kafka infrastructure used during development was hosted through Aiven.
@@ -127,7 +126,7 @@ The feed also uses pagination to avoid loading the entire dataset at
 once.
 
 <p align="center">
-  <img src="docs/feed-flow.png" width="85%">
+  <img src="docs/feed-flow.png" width="85%" alt="Feed Flow">
 </p>
 
 ---
@@ -142,16 +141,16 @@ notifications, topics, and their relationships.
 
 The project uses relational concepts including:
 
-- Primary and foreign keys
-- Unique constraints
-- One-to-many relationships
-- Many-to-many relationships
-- Mapping tables
-- Pagination
-- Lazy fetching where appropriate
+* Primary and foreign keys
+* Unique constraints
+* One-to-many relationships
+* Many-to-many relationships
+* Mapping tables
+* Pagination
+* Lazy fetching where appropriate
 
 <p align="center">
-  <img src="docs/database-er.png" width="95%">
+  <img src="docs/database-er.png" width="95%" alt="CodeCache Database ER Diagram">
 </p>
 
 ---
@@ -160,30 +159,48 @@ The project uses relational concepts including:
 
 ### Application
 
-| Layer | Technologies |
-|---|---|
-| Frontend | React |
-| Primary Backend | Java, Spring Boot |
-| Additional Backend | Go |
-| Additional Service | Python |
-| API | REST, GraphQL |
-| ORM | JPA, Hibernate |
+| Layer              | Technologies      |
+| ------------------ | ----------------- |
+| Frontend           | React             |
+| Primary Backend    | Java, Spring Boot |
+| Additional Backend | Go                |
+| Additional Service | Python            |
+| API                | REST, GraphQL     |
+| ORM                | JPA, Hibernate    |
 
 ### Infrastructure
 
-| Component | Technology |
-|---|---|
-| Database | PostgreSQL / Neon |
-| Cache | Redis / Upstash |
-| Messaging | Apache Kafka / Aiven |
-| Image Storage | Cloudinary |
-| AI | Gemini API |
-| Containerization | Docker |
-| Deployment | Render |
+| Component        | Technology           |
+| ---------------- | -------------------- |
+| Database         | PostgreSQL / Neon    |
+| Cache            | Redis / Upstash      |
+| Messaging        | Apache Kafka / Aiven |
+| Image Storage    | Cloudinary           |
+| Containerization | Docker               |
+| Deployment       | Render               |
 
 ---
 
-## Cloud & Deployment
+## Python Service
+
+CodeCache also includes a Python service responsible for interacting with
+coding platforms.
+
+The service currently supports:
+
+* Fetching code from **LeetCode**
+* Fetching all submissions from **LeetCode**
+* Fetching submission details from **LeetCode**
+* Fetching code from **CSES**
+* Fetching all submissions from **CSES**
+* Fetching submission details from **CSES**
+
+The service requires certain authentication/session tokens from the
+respective platforms. These tokens are obtained by inspecting the
+platform's web page/session and are **not included in this repository**.
+
+> If you are interested in how this service works or want to understand
+> the token-based integration, feel free to reach out to me.
 
 ---
 
@@ -194,19 +211,19 @@ managed cloud services and containerized application deployments.
 
 ### Deployment Overview
 
-| Component | Platform / Service | Purpose |
-|---|---|---|
-| React Frontend | Netlify | Frontend hosting and deployment |
-| Spring Boot Backend | Render | Backend API deployment |
-| Go Service | Render | Go service deployment |
-| PostgreSQL | Neon | Primary relational database |
-| Redis | Upstash | Caching and fast-access data |
-| Apache Kafka | Aiven | Asynchronous event communication |
-| Image Storage | Cloudinary | Profile and uploaded image storage |
-| AI Integration | Gemini API | AI-assisted problem information |
-| Containerization | Docker | Application containerization |
+| Component           | Platform / Service | Purpose                            |
+| ------------------- | ------------------ | ---------------------------------- |
+| React Frontend      | Netlify            | Frontend hosting and deployment    |
+| Spring Boot Backend | Render             | Backend API deployment             |
+| Go Service          | Render             | Go service deployment              |
+| PostgreSQL          | Neon               | Primary relational database        |
+| Redis               | Upstash            | Caching and fast-access data       |
+| Apache Kafka        | Aiven              | Asynchronous event communication   |
+| Image Storage       | Cloudinary         | Profile and uploaded image storage |
+| Containerization    | Docker             | Application containerization       |
 
 ### Deployment Architecture
+
 ```text
                          Users
                            │
@@ -235,23 +252,29 @@ managed cloud services and containerized application deployments.
                                   │   Render    │
                                   │ Go Service  │
                                   └─────────────┘
-
-                         External Integration
-                                  │
-                                  ▼
-                            Gemini API
+```
 
 ### Services Used
 
-- **Render** — Application deployment
-- **Neon** — PostgreSQL database
-- **Upstash** — Redis
-- **Aiven** — Kafka
-- **Cloudinary** — Image storage
-- **Gemini API** — AI-assisted problem information
+* **Render** — Application deployment
+* **Neon** — PostgreSQL database
+* **Upstash** — Redis
+* **Aiven** — Kafka
+* **Cloudinary** — Image storage
 
-> Some infrastructure services used during development were free or
-> temporary and may not remain continuously available.
+### Render Free Instance
+
+The Spring Boot backend is currently deployed using a **Render free
+instance**.
+
+Because the free instance goes to sleep after a period of inactivity,
+the backend may need some time to wake up when the application is accessed
+again.
+
+> **Please note:** The first request after the backend has been inactive
+> may take **up to several minutes**. If the application appears to be
+> loading for a while during your first visit or login, please give it
+> some time to wake up.
 
 ---
 
@@ -259,11 +282,11 @@ managed cloud services and containerized application deployments.
 
 The project is separated into multiple repositories.
 
-| Component | Repository |
-|---|---|
-| Spring Boot Backend | [CodeCache](https://github.com/pavan-ganesh123/CodeCache) |
-| React Frontend | [CodingFront](https://github.com/pavan-ganesh123/CodingFront) |
-| Go Service | [ChatLoop](https://github.com/pavan-ganesh123/ChatLoop) |
+| Component           | Repository                                                    |
+| ------------------- | ------------------------------------------------------------- |
+| Spring Boot Backend | [CodeCache](https://github.com/pavan-ganesh123/CodeCache)     |
+| React Frontend      | [CodingFront](https://github.com/pavan-ganesh123/CodingFront) |
+| Go Service          | [ChatLoop](https://github.com/pavan-ganesh123/ChatLoop)       |
 
 ---
 
@@ -272,13 +295,13 @@ The project is separated into multiple repositories.
 The [`docs`](docs/) directory contains the technical diagrams used to
 document the system.
 
-| Diagram | Description |
-|---|---|
-| [Architecture](docs/architecture.png) | Overall system architecture |
+| Diagram                                             | Description                           |
+| --------------------------------------------------- | ------------------------------------- |
+| [Architecture](docs/architecture.png)               | Overall system architecture           |
 | [Authentication Flow](docs/authentication-flow.png) | Authentication and authorization flow |
-| [Kafka Flow](docs/kafka-flow.png) | Event-driven notification flow |
-| [Feed Flow](docs/feed-flow.png) | Feed generation and visibility logic |
-| [Database ER Diagram](docs/database-er.png) | PostgreSQL entities and relationships |
+| [Kafka Flow](docs/kafka-flow.png)                   | Event-driven notification flow        |
+| [Feed Flow](docs/feed-flow.png)                     | Feed generation and visibility logic  |
+| [Database ER Diagram](docs/database-er.png)         | PostgreSQL entities and relationships |
 
 ---
 
@@ -289,21 +312,21 @@ technologies can work together in a growing application.
 
 The project provided hands-on experience with:
 
-- Spring Boot backend architecture
-- REST and GraphQL APIs
-- PostgreSQL database design
-- JPA and Hibernate
-- Authentication and authorization
-- Redis caching
-- Kafka-based asynchronous communication
-- Go backend services
-- Python service integration
-- React frontend development
-- Docker-based deployment
-- Cloud infrastructure
-- External API integration
-- Object-oriented design principles
-- Separation of concerns
+* Spring Boot backend architecture
+* REST and GraphQL APIs
+* PostgreSQL database design
+* JPA and Hibernate
+* Authentication and authorization
+* Redis caching
+* Kafka-based asynchronous communication
+* Go backend services
+* Python service integration
+* React frontend development
+* Docker-based deployment
+* Cloud infrastructure
+* External API integration
+* Object-oriented design principles
+* Separation of concerns
 
 ---
 
@@ -341,15 +364,15 @@ also to understand the architectural decisions behind a growing product.
 
 Potential areas for further improvement include:
 
-- Automated testing and increased test coverage
-- Database migrations using Flyway or Liquibase
-- Improved observability and monitoring
-- More robust Kafka failure handling
-- Advanced caching strategies
-- Rate limiting
-- CI/CD automation
-- Improved search and recommendations
-- Further performance optimization
+* Automated testing and increased test coverage
+* Database migrations using Flyway or Liquibase
+* Improved observability and monitoring
+* More robust Kafka failure handling
+* Advanced caching strategies
+* Rate limiting
+* CI/CD automation
+* Improved search and recommendations
+* Further performance optimization
 
 ---
 
@@ -364,5 +387,11 @@ Thanks for taking the time to explore **CodeCache.**
 <br/>
 
 **CodeCache — Build · Solve · Share · Connect**
+
+<br/>
+
+### CodeCache
+
+[**https://adorable-basbousa-4829bb.netlify.app/**](https://adorable-basbousa-4829bb.netlify.app/)
 
 </div>
